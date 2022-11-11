@@ -7,8 +7,11 @@ a {
 #main {
 	width: 100%;
 }
+#Ariana {
+	margin: 10px auto 0px; width: 1100px; height: 680px; 
+}
 #wrap {
-	margin: 10px auto 0px; width: 1100px; height: 680px; position: relative;
+	margin: 10px auto 0px; width: 1100px; height: 680px; position: relative; margin-top: 470px;
 }
 #text {
 	left: 60px; top: 80px; width: 400px; height: 425px; position: absolute;
@@ -66,6 +69,7 @@ body, h2, p {
 	-moz-background-size: 100% 100%;
 	background-size: 100% 100%;
 	position: absolute;
+	margin-left: 450px;
 }
 
 #shineflip-pages 
