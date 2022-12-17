@@ -35,6 +35,7 @@
 
     <script type="text/javascript" src="xiaoweigod.com/shineflip_min.js"></script>
 
+
     <!-- <STYLE type="text/css">
         .STYLE1 {
             color: #666666
@@ -98,36 +99,45 @@
         <DIV id="wrap">
             <DIV id="text">
                 <DIV id="code">
-                    <FONT color="#ff0000"><SPAN class="say">
-                            你好阿~包子，認識不久，但總有種特別的感覺。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
-                            覺得自己跟你好像已經很熟了，又常常覺得或許很生疏。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
-                            希望之後的發展會越來越好。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
-                            在人生道路上，一定會時常開心時常難過，希望你也能享受低潮的時光。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN
-                            class="say">祝妳人生每過幾年，回頭看看以前的自己，都會覺得自己越變越棒。
-                        </SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
-                            很喜歡念書的妳去日本一定也很能得心應手，祝妳在日本也能生活得很愉快!</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN
-                            class="say">
-                            妳是不太會讓人操心的孩子，雖然部分幼稚，但也很成熟，所以不要害怕自己長不大。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN
-                            class="say">
-                            有多少人被迫長大呢~ 希望妳能永遠活得像公主一樣，不用長大。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say"><SPAN
-                                class="space"></SPAN> 生日快樂，希望妳天天開心。</SPAN> </FONT>
+                    <FONT color="#ff0000">
+                        <SPAN class="say">噗噗毛毛，我們認識不久，但總有種特別熟悉的感覺。</SPAN>  <BR>  <SPAN class="say"></SPAN><BR> 
+                        <SPAN class="say">有時覺得很熟了，有時又覺得生疏。  你是怪人!</SPAN><BR><SPAN class="say"></SPAN><BR>
+                        <SPAN class="say">希望之後的你每天都能越來越開心。</SPAN><BR><SPAN class="say"></SPAN><BR>
+                        <SPAN class="say">在人生道路上，一定會時常開心時常難過，希望你也能享受低潮的時光。</SPAN><BR><SPAN class="say"></SPAN><BR>
+                        <SPAN class="say">祝妳人生每過幾年，回頭看看以前的自己，都會覺得自己越變越棒。</SPAN><BR><SPAN class="say"></SPAN><BR>
+                        <SPAN class="say">很喜歡念書的妳去日本一定也很能得心應手，祝妳在日本也能生活得很愉快!</SPAN><BR><SPAN class="say"></SPAN><BR>
+                        <SPAN class="say">希望妳能永遠活得像公主一樣，不用長大。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
+                        <SPAN class="say">還有好多話想跟你說，還有很多事想跟你一起做。等你回來台灣!</SPAN><BR><SPAN class="say"></SPAN><BR>
+                        <SPAN class="space"></SPAN> 生日快樂，天天開心喔噗噗毛毛</SPAN>  <BR>
+                        <SPAN class="space"></SPAN> 2022/12/17留</SPAN>   
+                            </FONT>
                     <P></P>
                 </DIV>
             </DIV>
             <DIV id="clock-box">我們已經認識了...</SPAN>
 
                 <DIV id="clock"></DIV>
+
             </DIV><CANVAS width="1100" height="680" id="canvas"></CANVAS>
+
+            <!-- <DIV id="textcode">
+                <FONT color="#ff0000"><SPAN class="say">
+                    還有好多話想跟你說。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
+                        <SPAN class="say">
+                            還有好多天想跟你聊。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
+                                <SPAN class="say">
+                                    未來我們都會更好，加油。</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say">
+             </FONT>
+            <P></P>
+            </DIV> -->
         </DIV>
     </DIV>
-
-
+    
 
     <SCRIPT>
 
         (function () {
             var canvas = $('#canvas');
-
             if (!canvas[0].getContext) {
                 $("#error").show();
                 return false;
@@ -262,6 +272,7 @@
                 together.setMilliseconds(00);
 
                 $("#code").show().typewriter();
+                $("#textcode").show().typewriter();
                 $("#clock-box").fadeIn(500);
                 while (true) {
                     timeElapse(together);
@@ -294,6 +305,18 @@
         });
     </script>
 
+<!-- 音樂網站https://soundcloud.com/upload -->
+<!-- 加入延遲html frame方法 -->
+<!-- <div id="Delaymusic" align="center"><img  alt="loading" />努力加載中...</div> -->
+<div id="Delaymusic" align="center"></div>
+    <script type="text/javascript">  
+    var html="<iframe  height='0' controls='controls' allow='autoplay' loop='loop' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1404579580&color=%23ff5500&auto_play=true'></iframe>";
+
+    setTimeout("document.getElementById('Delaymusic').innerHTML=html",3000); 
+    </script>
+
+
+
 
 
     <div class="bg1">
@@ -311,11 +334,16 @@
 
 
 
-    <audio id="bgmMusic"
-        src="https://imagexiaoweigod-1251763511.cossh.myqcloud.com/music/%E9%9D%92%E8%A1%8C%E6%9E%9D%2C%E6%9F%B3%E4%BA%A6%E5%B0%8F%E7%B1%B3%20-%20%E6%A8%B1%E8%8A%B1%E6%A8%B1%E8%8A%B1%E6%83%B3%E8%A7%81%E4%BD%A0.mp3"
-        preload="auto" type="audio/mp3" autoplay loop></audio>
+    <!-- <audio id="bgmMusic"
+        src="https://drive.google.com/file/d/1SEt-xp8vrtiQ034LiX9Pxy3qAVQNGNMD/preview?autoplay=1"
+        preload="auto" type="audio/mp3" autoplay loop></audio> -->
 
-
+            
+            <!--controls="controls" 才可以讓chrome自動撥放 一定要設高度因為政策關係  https://soundcloud.com/ahahaha-hah/newaabb?si=4e074d4c14ad40f0a93cc0376154ed80&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing 我的音檔  -->
+            <!-- <iframe id="Delaymusic" width="100%" height="100" controls="controls" allow="autoplay" loop="loop" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1404579580&color=%23ff5500&auto_play=true"></iframe></div> -->
+            <!-- https://soundcloud.com/upload 音樂網站 -->
+            
 </body>
 
 </html>
